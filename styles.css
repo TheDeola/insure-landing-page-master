@@ -97,7 +97,7 @@ header {
   z-index: 3;
   border: none;
   margin-inline: auto;
-  position: relative;
+  position: absolute;
   padding-bottom: 12rem;
   background-image: url(./images/bg-pattern-mobile-nav.svg);
   background-repeat: no-repeat;
@@ -121,7 +121,7 @@ header {
 }
 
 dialog[open] {
-  /* overflow: visible; */
+  overflow: visible;
   text-transform: uppercase;
   background-color: var(--Very-Dark-Violet);
   color: var(--White);
@@ -199,6 +199,12 @@ dialog button {
   letter-spacing: 1px;
 }
 
+.intro-banner-info button:hover {
+  cursor: pointer;
+  background-color: var(--White);
+  color: var(--Very-Dark-Violet);
+}
+
 section:nth-child(3) {
   padding: 200px 20px;
   background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
@@ -246,6 +252,13 @@ section:nth-child(4) button {
   letter-spacing: 1px;
   margin-top: 30px;
 }
+
+section:nth-child(4) button:hover {
+  cursor: pointer;
+  background-color: var(--White);
+  color: var(--Very-Dark-Violet);
+}
+
 footer {
   margin-top: 10rem;
   background-image: url(./images/bg-pattern-footer-mobile.svg);
@@ -266,6 +279,10 @@ footer p,
   font-size: x-small;
   font-weight: 700;
 }
+footer p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 footer .socials {
   margin: 30px auto;
   display: flex;
@@ -275,6 +292,12 @@ footer .socials {
 footer .socials img {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+footer .socials img:hover {
+  cursor: pointer;
+  background-color: var(--Grayish-Blue);
+  border-radius: 50%;
 }
 .footer-mid {
   line-height: 2rem;
@@ -309,6 +332,10 @@ footer .socials img {
     display: block;
   }
 
+  dialog[open] {
+    display: none;
+  }
+
   .desktop-menu-container ul {
     display: flex;
     align-items: center;
@@ -331,6 +358,12 @@ footer .socials img {
     text-transform: uppercase;
     padding: 10px 15px;
     letter-spacing: 1px;
+  }
+
+  .desktop-menu-container button:hover {
+    cursor: pointer;
+    background-color: var(--Very-Dark-Violet);
+    color: var(--White);
   }
 
   .desktop-banner-image {
@@ -455,6 +488,10 @@ footer .socials img {
     display: block;
   }
 
+  dialog[open] {
+    display: none;
+  }
+
   .desktop-menu-container ul {
     display: flex;
     align-items: center;
@@ -496,7 +533,7 @@ footer .socials img {
     background-repeat: no-repeat, no-repeat;
     background-position: right, 0px 300px;
   }
-  
+
   .intro-banner-image {
     display: none;
   }
