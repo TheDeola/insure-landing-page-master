@@ -145,16 +145,22 @@ dialog button {
   font-size: large;
 }
 
-.hamburger-icon {
-  width: auto;
-  height: auto;
+.hamburger {
+  background-color: transparent;
+  border: 0;
   cursor: pointer;
+  display: flex;
 }
 
-.close-icon {
+.hamburger .close {
   display: none;
 }
-
+.hamburger.show .open {
+  display: none;
+}
+.hamburger.show .close {
+  display: block;
+}
 .desktop-banner-image {
   display: none;
 }
@@ -336,6 +342,9 @@ footer .socials img:hover {
     display: none;
   }
 
+  .hamburger {
+    display: none;
+  }
   .desktop-menu-container ul {
     display: flex;
     align-items: center;
@@ -492,6 +501,10 @@ footer .socials img:hover {
     display: none;
   }
 
+  .hamburger {
+    display: none;
+  }
+  
   .desktop-menu-container ul {
     display: flex;
     align-items: center;
